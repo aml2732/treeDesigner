@@ -1,12 +1,3 @@
-console.log('got to index.js');
-/*
-Base tree should have the following specifications:
-top:
-wrap pairs:
-ornament locations:
-stump:
-*/
-
 //Canvas draw functions --------------------------------------------------------
 
 function drawTree_Base(){
@@ -35,7 +26,6 @@ $("#myTreeType").change(function(a, b){
 });
 
 function toggleChildren(id){
-  console.log('got to toggle children of: '+ id)
   let isHidden = $(`.actionMenuSubItem_${id}`).hasClass('amc-hidden');
   if(isHidden){
     $(`.actionMenuSubItem_${id}`).removeClass('amc-hidden')
@@ -71,7 +61,6 @@ var ctx = c.getContext("2d");
 drawTree();
 
 $(document).ready(function(){
-  console.log("helloworld document is ready ");
   tree_options.forEach(function(item){
     $(".action-menu").append(`<li id="actionMenuItem_${item.id}" onclick="toggleChildren('${item.id}')">${item.name}</li>`);
     item.children.forEach(function(child){

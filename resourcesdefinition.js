@@ -1,4 +1,3 @@
-console.log('got to resources definition.js');
 
 var points = [
   {x:170, y:120},{x:195, y: 125},{x:225, y: 128},
