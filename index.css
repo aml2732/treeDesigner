@@ -1,0 +1,52 @@
+.split-pane-parent{
+  display:flex;
+  flex-direction:row;
+  border: solid 1px black;
+  padding: 0.5rem;
+  justify-content: space-between;
+}
+
+.split-pane{
+  flex: 0 0 49%;
+  border: solid 1px black;
+}
+
+ul.action-menu{
+  padding-inline-start: 0;
+}
+
+ul.action-menu>li{
+  list-style: none;
+  padding: 1rem;
+}
+
+ul.action-menu>li:hover{
+  color: white;
+  background-color: lightskyblue;
+}
+
+.padding-1{padding: 1rem;}
+.padding-0_5{padding:0.5rem;}
+select{
+  border-radius: 5px;
+  height:2rem;
+}
+
+ul.action-menu>li.actionMenuChild{
+  padding-left: 2.5rem;
+}
+
+.amc-hidden{
+  display:none;
+}
+
+
+.actionMenuChild.active::after{
+  content: '\2714';
+  color: #21618C;
+  padding-left:1rem;
+}
+
+.actionMenuChild.active:hover::after{
+  color: white;
+}

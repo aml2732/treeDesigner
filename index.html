@@ -1,0 +1,37 @@
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="./index.css"></link>
+</head>
+
+<body>
+  <div>
+    <h1>Tree Designer</h1>
+
+    <div class="split-pane-parent">
+      <div class="split-pane">
+        <p class="padding-0_5" style="padding-left:1rem;">You're a popular home decorator who has been tasked for builing a charming holiday tree.  Deck out your tree using the options below.</p>
+        <hr/>
+
+        <div class="padding-1">
+          <label>Tree Type</label>
+          <select id="myTreeType">
+            <option value="cct" selected>Corny Christmas Tree</option>
+            <option value="ht">Halloween Tree</option>
+          </select>
+        </div>
+        <hr/>
+        <ul class="action-menu"></ul>
+      </div>
+
+      <div class="split-pane">
+        <canvas id="myCanvas" width="400" height="400" ></canvas>
+      </div>
+    </div>
+
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <script src="./resourcesdefinition.js"></script>
+  <script src="./index.js"></script>
+</body>
+</html>
